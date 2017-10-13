@@ -1,0 +1,33 @@
+.team-member {
+  margin-bottom: 50px;
+  text-align: center; }
+.team-member img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid white; }
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none; }
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv1,#myDiv2,#myDiv3 {
+  display: none;
+}

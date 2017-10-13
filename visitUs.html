@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Vedanshu Dahiya">
+
+    <title>Ved Interior Design</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/visitUs.css" rel="stylesheet">
+    
+    <!-- Custom Title Icon -->
+    <link rel="icon" type="image/png" href="img/Icon.png" />
+  
+  </head>
+
+  <body id="page-top" onload="myFunction()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="homePage.html">VED INTERIOR DESIGN</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b><i>Visit Us</i></b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+
+    <section class="bg-light" id="visitInfo">
+  
+      <div class="container" style="min-height: 400px;">
+        <div class="row">
+          <div class="col-md-6 myCol animate-bottom address-container" id="myDiv1">
+            <div class="address-content">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Address : Some Random Amazing Place, 221B, Baker Street
+            </div>
+            <div class="address-content">
+              <i class="fa fa-clock-o" aria-hidden="true"></i> Timing : 11 am - 11pm
+            </div>
+            <div class="address-content">
+              <i class="fa fa-phone" aria-hidden="true"></i> Phone Number : 999-999-9999
+            </div>
+          </div>
+          <div class="col-md-6 myCol animate-bottom holds-the-iframe" id="myDiv2">
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Vedanshu Dahiya 2017</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script>
+      $(window).bind("load", function() {
+        $('#myDiv2').prepend('<iframe height="400" width="100%" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCapTDFgXHj5QN1NxalbeCzfspSA-I9frM&q=India+Gate"allowfullscreen></iframe>');
+      });
+      
+      function myFunction() {
+        setTimeout(show1, 150);
+        setTimeout(show2, 400);
+      }
+      function show1() {
+        document.getElementById("myDiv1").style.display = "block";
+      }
+      function show2() {
+        document.getElementById("myDiv2").style.display = "block";
+      }
+    </script>
+  
+  </body>
+
+</html>
